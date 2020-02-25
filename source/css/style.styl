@@ -7,6 +7,14 @@ screen-widescreen = 1280px
 screen-fullhd = 1472px
 
 /* ---------------------------------
+ *       Colors
+ * --------------------------------- */
+primary = #ef7d00
+
+.primary
+    color: primary
+
+/* ---------------------------------
  *       Override CSS Framework
  * --------------------------------- */
 html
@@ -81,7 +89,7 @@ img.thumbnail
         max-height: 1.75rem
 
 .navbar-main
-    background: #ef7d00
+    background: primary
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05)
     .navbar-menu,
     .navbar-start,
@@ -118,7 +126,7 @@ img.thumbnail
 
 .footer
     display: none
-    background: #f18800
+    background: primary
     .field
         .button
             background: transparent
@@ -358,6 +366,8 @@ img.thumbnail
         footer
             strong + cite
                 margin-left: 0.5em
+    a
+        color: primary
 
 /* ---------------------------------
  *        Fix code highlight
